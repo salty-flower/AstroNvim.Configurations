@@ -13,6 +13,7 @@ return {
     shellpipe = "2>&1 | Out-File -Encoding UTF8 %s; exit $LastExitCode",
     shellquote = "",
     shellxquote = "",
+    colorcolumn = "80,100,120",
   },
   g = {
     mapleader = " ", -- sets vim.g.mapleader
