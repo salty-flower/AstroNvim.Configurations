@@ -30,5 +30,4 @@ return {
   { import = "astrocommunity.bars-and-lines.vim-illuminate" },
   { import = "astrocommunity.bars-and-lines.smartcolumn-nvim" },
   { import = "astrocommunity.motion.flash-nvim" },
-  { import = "astrocommunity.split-and-window.edgy-nvim" },
 }
