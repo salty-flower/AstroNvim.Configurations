@@ -23,6 +23,7 @@ return {
     diagnostics_mode = 3, -- set the visibility of diagnostics in the UI (0=off, 1=only show in status line, 2=virtual text off, 3=all on)
     icons_enabled = true, -- disable icons in the UI (disable if no nerd font is available, requires :PackerSync after changing)
     ui_notifications_enabled = true, -- disable notifications when toggling UI elements
+    skip_ts_context_commentstring_module = true, -- introduced by nvim-ts-context-commentstring breaking change 5b02387b28a79c61b7d406c2a33d4db1d8454f53
   },
 }
 -- If you need more control, you can use the function()...end notation
