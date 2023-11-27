@@ -5,7 +5,7 @@ return {
   -- available plugins can be found at https://github.com/AstroNvim/astrocommunity
 
   { import = "astrocommunity.completion.copilot-lua-cmp" },
-  { import = "astrocommunity.colorscheme.neosolarized-nvim" },
+  -- { import = "astrocommunity.colorscheme.neosolarized-nvim" },
   { import = "astrocommunity.pack.ps1" },
   { import = "astrocommunity.pack.cs" },
   { import = "astrocommunity.pack.json" },
@@ -24,7 +24,7 @@ return {
   { import = "astrocommunity.indent.indent-blankline-nvim" },
   { import = "astrocommunity.editing-support.refactoring-nvim" },
   { import = "astrocommunity.editing-support.rainbow-delimiters-nvim" },
-  { import = "astrocommunity.color.transparent-nvim" },
+  -- { import = "astrocommunity.color.transparent-nvim" },
   -- causes hang after jumping to symbols
   -- { import = "astrocommunity.bars-and-lines.dropbar-nvim" },
   { import = "astrocommunity.bars-and-lines.vim-illuminate" },
