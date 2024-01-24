@@ -12,6 +12,7 @@ return {
   { import = "astrocommunity.pack.typescript" },
   { import = "astrocommunity.pack.html-css" },
   { import = "astrocommunity.pack.tailwindcss" },
+  { import = "astrocommunity.pack.typst" },
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.kotlin" },
   { import = "astrocommunity.pack.dart" },
