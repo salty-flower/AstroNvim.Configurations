@@ -16,6 +16,7 @@ return {
     shellquote = "",
     shellxquote = "",
     colorcolumn = "80,100,120",
+    guifont = "Agave Nerd Font Mono",
   },
   g = {
     mapleader = " ", -- sets vim.g.mapleader
