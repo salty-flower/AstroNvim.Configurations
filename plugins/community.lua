@@ -19,6 +19,7 @@ return {
   { import = "astrocommunity.pack.scala" },
   { import = "astrocommunity.pack.markdown" },
   { import = "astrocommunity.pack.rust" },
+  { import = "astrocommunity.markdown-and-latex.vimtex" },
   { import = "astrocommunity.scrolling.satellite-nvim" },
   { import = "astrocommunity.scrolling.neoscroll-nvim" },
   { import = "astrocommunity.scrolling.mini-animate" },
