@@ -99,9 +99,23 @@ return {
       "nvim-lua/plenary.nvim",
       "MunifTanjim/nui.nvim",
     },
-    opts = {
-      -- configuration goes here
-      lang = "python3",
+    opts = function()
+      local lc_imports = require "leetcode.config.imports"
+
+      local python3_imports_with_type_ignore = {}
+      for _, line in ipairs(lc_imports["python3"]) do
+        table.insert(python3_imports_with_type_ignore, line .. "  # type: ignore")
+      end
+
+      return {
+        lang = "python3",
+        injector = {
+          ["python3"] = {
+            before = python3_imports_with_type_ignore,
+          },
+        },
+      }
+    end,
     },
   },
 }
