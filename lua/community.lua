@@ -28,7 +28,7 @@ return {
   { import = "astrocommunity.editing-support.rainbow-delimiters-nvim" },
   -- { import = "astrocommunity.color.transparent-nvim" },
   -- causes hang after jumping to symbols
-  -- { import = "astrocommunity.bars-and-lines.dropbar-nvim" },
+  { import = "astrocommunity.bars-and-lines.dropbar-nvim" },
   { import = "astrocommunity.bars-and-lines.vim-illuminate" },
   { import = "astrocommunity.bars-and-lines.smartcolumn-nvim" },
   { import = "astrocommunity.motion.flash-nvim" },
