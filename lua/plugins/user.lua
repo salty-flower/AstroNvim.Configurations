@@ -106,7 +106,7 @@ return {
     build = ":TSUpdate html", -- if you have `nvim-treesitter` installed
     dependencies = {
       "nvim-telescope/telescope.nvim",
-      -- "ibhagwan/fzf-lua",
+      "ibhagwan/fzf-lua",
       "nvim-lua/plenary.nvim",
       "MunifTanjim/nui.nvim",
     },
@@ -127,6 +127,29 @@ return {
         },
       }
     end,
+  },
+  {
+    "folke/noice.nvim",
+    event = "VeryLazy",
+    dependencies = {
+      "MunifTanjim/nui.nvim",
+      "rcarriga/nvim-notify",
+    },
+  },
+  {
+    "lervag/vimtex",
+    -- SumatraPDF is used by default on Windows, so no config for viewer is needed
+  },
+  {
+    "nvim-treesitter/nvim-treesitter-context",
+    opts = {
+      enable = true,
+    },
+  },
+  {
+    "folke/trouble.nvim",
+    opts = {
+      auto_open = false,
     },
   },
 }
