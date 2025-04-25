@@ -1,0 +1,14 @@
+return {
+  "folke/snacks.nvim",
+  opts = {
+    dashboard = {
+      preset = {
+        keys = {
+          key = "lt",
+          action = ":Leet<ENTER>",
+          desc = "  LeetCode",
+        },
+      },
+    },
+  },
+}

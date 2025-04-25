@@ -23,7 +23,6 @@ return {
   { import = "astrocommunity.scrolling.satellite-nvim" },
   { import = "astrocommunity.scrolling.neoscroll-nvim" },
   { import = "astrocommunity.scrolling.mini-animate" },
-  { import = "astrocommunity.indent.indent-blankline-nvim" },
   { import = "astrocommunity.editing-support.refactoring-nvim" },
   { import = "astrocommunity.editing-support.rainbow-delimiters-nvim" },
   -- { import = "astrocommunity.color.transparent-nvim" },
