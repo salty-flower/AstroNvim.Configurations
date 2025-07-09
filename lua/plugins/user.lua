@@ -206,4 +206,5 @@ return {
       auto_open = false,
     },
   },
+  {"kevinhwang91/nvim-ufo", enabled=false}
 }
