@@ -113,23 +113,26 @@ return {
       "nvim-lua/plenary.nvim",
       "MunifTanjim/nui.nvim",
     },
-    opts = function()
-      local lc_imports = require "leetcode.config.imports"
-
-      local python3_imports_with_type_ignore = {}
-      for _, line in ipairs(lc_imports["python3"]) do
-        table.insert(python3_imports_with_type_ignore, line .. "  # type: ignore")
-      end
-
-      return {
-        lang = "python3",
-        injector = {
-          ["python3"] = {
-            before = python3_imports_with_type_ignore,
-          },
+    opts = { ---@type lc.UserConfig
+      lang = "python3",
+      injector = { ---@type table<lc.lang, lc.inject>
+        ["python3"] = {
+          imports = function(default_imports)
+            local python3_imports_with_type_ignore = { "# ruff: noqa:F403, F401" }
+            for _, line in ipairs(default_imports) do
+              local new_line
+              if line:find "*" then
+                new_line = line .. " # pyright: ignore[reportWildcardImportFromLibrary]"
+              else
+                new_line = line .. " # pyright: ignore[reportUnusedImport]"
+              end
+              table.insert(python3_imports_with_type_ignore, new_line)
+            end
+            return python3_imports_with_type_ignore
+          end,
         },
-      }
-    end,
+      },
+    },
   },
   {
     "windwp/nvim-autopairs",
